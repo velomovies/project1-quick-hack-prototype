@@ -4,7 +4,7 @@ In this repo you can find the app I made from scratch. The app is based on a spa
 
 ![Preview image](app/static/images/preview.png)
 > My work
-> [**Velomovies**](https://velomovies.github.io/Project-1-WEBDEV/app).
+> [**Velomovies**](https://velomovies.github.io/project1-quick-hack-prototype/app).
 
 ## Background
 
