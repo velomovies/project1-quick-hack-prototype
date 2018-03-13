@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="static/css/leaflet.css" />
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Parken & Plantsoenen</title>
+  </head>
+
+  <body>
+    
+    <!-- The map -->
+    <section id="home">
+        <div id="mapid"></div>   
+    </section>
+
+    <!-- Section with park info and photos -->
+    <section class="park" id="park">
+      <div class="parkInfo" id="parkInfo">       
+        <h1 data-bind="title"></h1>
+        <h2 data-bind="date"></h2>
+        <a href="#home">X</a>
+      </div>
+      <div id="images" class="images">
+        <div>
+          <h1 data-bind="park"></h1>
+          <img data-bind="image" src="" alt="">
+        </div>
+      </div>    
+    </section>
+
+    <!-- loader (shows only when there is something to load) -->
+    <section class="loader" id="loader">
+        <img data-bind="image" src="static/images/loader.gif" alt="loader">
+    </section>
+
+    <!-- A selection tool in the top-right corner to select a data -->
+    <aside>
+        <svg width="3em" height="2em">
+            <rect x="0" y="0" width="3em" height=".3em" rx=".2em" ry=".2em"/>
+            <rect x="0" y=".8em" width="3em" height=".3em" rx=".2em" ry=".2em"/>
+            <rect x="0" y="1.6em" width="3em" height=".3em" rx=".2em" ry=".2em"/>
+          </svg>
+          <article>
+            <ul class="selectDate hidden" id="selectDate">
+              <li data-bind="date"></li>
+            </ul>
+          </article>
+      </aside>
+    
+  </body>
+
+  <!-- libraries -->
+  <script src="static/js/libraries/routie.js"></script>
+  <script src="static/js/libraries/transparency.js"></script>
+  <script src="static/js/libraries/leaflet.js"></script>
+  <script src="static/js/libraries/leaflet-providers.js"></script>
+  <script src="static/js/libraries/terraformer.js"></script>
+  <script src="static/js/libraries/terraformer-wkt-parser.js"></script>
+ 
+  <!-- app -->
+  <script src="static/js/app.js"></script>
+  
+</html>
